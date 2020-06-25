@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResponsiveFlex</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .header {
+        text-align: center;
+        padding: 25px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .column {
+        flex: 25%;
+      }
+
+      .column img{
+        padding: 4px;
+        width: 100%;
+        vertical-align: middle;
+      }
+
+      @media (max-width: 800px){
+        .column{
+          flex: 50%;
+        }
+      }
+
+      @media (max-width: 600px){
+        .column{
+          flex: 100%;
+        }
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Responsive Image Grid</h1>
+      <p>Resize browser window to see the responsiveness</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="./Images/Baboon.jpg" />
+        <img src="./Images/Droplet.jpg" />
+        <img src="/Images/eye.jpg" />
+        <img src="./Images/Lion.jpg" />
+      </div>
+
+        <div class="column">
+          <img src="./Images/Bike.jpg" />
+          <img src="./Images/mountains.jpg" />
+          <img src="./Images/ship.jpg" />
+          <img src="./Images/Tower.jpg" />
+        </div>
+
+          <div class="column">
+            <img src="./Images/Tree.jpg" />
+            <img src="./Images/Waterfall.jpg" />
+            <img src="./Images/whale.jpg" />
+            <img src="./Images/wolf.jpg" />
+            <img src="./Images/woman.jpg"/>
+          </div>
+
+  </body>
+</html>
